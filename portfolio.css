@@ -1,0 +1,421 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #0d1b2a;
+    overflow: auto;
+}
+
+.name{
+    color:yellow;
+background: -webkit-linear-gradient(aqua,lightgreen);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+/* header part */
+header{
+    display :flex;
+    justify-content: space-around;
+    height: 5rem;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    background-color: #011b2a;
+      z-index: 5;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-around;
+    width: 65%;
+    list-style: none;
+}
+
+.nav li a{
+    transition: 0.7s;
+}
+
+.nav li a:hover{
+    color: aqua;
+} 
+
+.nav li:after {
+    content: "";
+    position: relative;
+    width: 0%;
+    height: 1px;
+    display: block;
+    transition: all 0.5s ease-in-out;
+    bottom: -20%;
+  }
+  .nav li:hover::after {
+    width: 100%;
+    height: 1.1px;
+    background-color: aqua;
+  }
+
+/* first page */
+.intro{
+    height: 33rem;
+    width: 90%;
+   background-color: #1b263b; 
+    margin: 2rem auto;
+    background-size: cover;
+    padding: 2rem;
+}
+    
+.intro-line{
+    position: relative;
+    padding: 1.25rem;
+    font-size: 2.25rem;
+    text-align: center;
+    border-top: 4px solid #415A77;
+    border-bottom: 4px solid #415A77;
+}
+
+.intro-main{
+    position:absolute;
+    bottom: 10rem;
+    left: 6rem;
+    font-size: 2.25rem;
+    letter-spacing: 3px;
+    line-height: 4rem;
+}
+
+span{
+    color: burlywood;
+}
+
+.intro-img{
+    position: absolute;
+    top: 15rem;
+    right: 10rem;
+    height: 20rem;
+    width: 20rem;
+ /*    mix-blend-mode: difference;
+    filter: brightness(0.54) contrast(50); */
+}
+
+/* about section */
+.about{
+    height: 35rem;
+    width: 90%;
+    background-color: #415A77;
+  /* background-image: url("https://4kwallpapers.com/images/wallpapers/infinity-stars-night-sky-dark-background-illuminated-480x800-2938.jpg"); */
+    margin: 2rem auto;
+   /*  background-size: cover; */
+    padding: 2rem;
+}
+
+.about-main{
+    width: 65%;
+    padding: 2.5rem;
+    font-size: 1rem;
+    letter-spacing: 0.2rem;
+    line-height: 2rem;
+    color: gray;
+}
+
+.about-main span{
+    color: #000;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.about-head{
+    text-align: center;
+    position: relative;
+    padding: 1.25rem;
+    border-top: 4px solid #182437;
+    border-bottom: 4px solid #0D1B2A;
+    font-size: 2.2rem;
+}
+
+/* education */
+.education{
+    height: 55rem;
+    width: 90%;
+    background-color: #164863;
+    margin: 2rem auto;
+    padding: 2rem;
+}
+
+.head-main{
+    text-align: center;
+    padding: 1rem;
+    letter-spacing: 0.15rem;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.head-main::after{
+    content: "";
+    position: relative;
+    bottom: -20px;
+    height: 4px;
+    width: 100%;
+    background-color: #000;
+    opacity: 0.5;
+    display: block;
+}
+
+.head-main::before{
+    content: "";
+    position: relative;
+    top: -20px;
+    height: 4px;
+    width: 100%;
+    opacity: 0.5;
+    background-color: #000;
+    display: block;
+}
+
+.section-block{
+    height: 150px;
+    width: 500px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: #164863;
+    padding: 10px;
+    margin: 25px;
+    line-height: 2rem;
+    letter-spacing: 0.15em;
+    font-size: 0.8rem;
+}
+
+.section-block {
+    text-align: center;
+}
+
+.section-block:hover{
+    box-shadow: 5px 5px 16px lightskyblue, -5px -5px 16px lightgoldenrodyellow;
+}
+
+.sec-position{
+    position: relative;
+   left: 35rem;
+}
+
+.project{
+    background-color: #18253e;
+    height: 25rem;
+    width: 90%;
+    margin: 2rem auto;
+    padding: 2rem ;
+}
+
+#project-head::after,#project-head::before{
+    background-color: white;
+}
+
+.p-box{
+    display: flex;
+    justify-content: space-around;
+}
+
+.p-content{
+    height: 15rem;
+    width: 10rem;
+    display: inline-block;
+    border: 3px solid whitesmoke;
+    margin: 2rem;
+    padding: 2px;
+    text-align: center;
+}
+
+.skills{
+    background-color: #000;
+    height: 50rem;
+    width: 90%;
+    margin: 2rem auto;
+    padding: 2rem;
+}
+
+#skills-head::after,#skills-head::before{
+    background-color: white;
+}
+
+.skill-coarse{
+    height: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    list-style: none;
+    align-items: center;
+    margin-left: 3rem
+}
+
+.skill-coarse li{
+    margin:1.5rem;
+}
+
+.skill-icon{
+    height: 2.5rem;
+    width: 2.5rem;
+    font-size: 2.5rem;
+    padding: 10px;
+    border-radius: 50%;
+    transition: 0.8s;
+    
+}
+
+.s1:hover{
+    color: #f06529;
+    transform: scale(1.2)translateY(-30px);
+}
+
+.s1:hover + p{
+    color: cyan;
+    text-decoration: solid #e34c26 underline;
+    transition: 1s;
+    transform: scale(1.1)
+}
+
+.s2:hover{
+    color: #2965f1;
+    transform: scale(1.2)translateY(-30px);
+}
+
+.s2:hover + p{
+    color: cyan;
+    text-decoration: solid #264de4 underline;
+    transition: 2s;
+    transform: scale(1.1)
+}
+
+.s3:hover{
+    color: indigo;
+    transform: scale(1.2)translateY(-30px);
+}
+
+.s3:hover + p{
+    color: cyan;
+    text-decoration: solid #563d7c underline;
+    transition: 2s;
+    transform: scale(1.1)
+}
+
+.s4:hover{
+    color: #f0db4f;
+    transform: scale(1.2)translateY(-30px);
+}
+
+.s4:hover + p{
+    color: cyan;
+    text-decoration: solid yellow underline;
+    transition: 2s;
+    transform: scale(1.1)
+}
+
+.s5:hover{
+    color: #f1502f;
+    transform: scale(1.2)translateY(-30px);
+}
+
+.s5:hover + p{
+    color: cyan;
+    text-decoration: solid orange underline;
+    transition: 2s;
+    transform: scale(1.1)
+}
+.s6:hover{
+    color: #9cdaf1;
+    transform: scale(1.2)translateY(-30px);
+}
+
+.s6:hover + p{
+    color: cyan;
+    text-decoration: solid #7dbbe6 underline;
+    transition: 2s;
+    transform: scale(1.1)
+}
+.s7:hover{
+    color: #3c873a;
+    transform: scale(1.2)translateY(-30px);
+}
+
+.s7:hover + p{
+    color: cyan;
+    text-decoration: solid #68ad63 underline;
+    transition: 2s;
+    transform: scale(1.1)
+}
+
+.s8:hover{
+    color: whitesmoke;
+    transform: scale(1.2)translateY(-30px);
+}
+
+.s8:hover + p{
+    color: cyan;
+    text-decoration: solid white underline;
+    transition: 2s;
+    transform: scale(1.1)
+}
+
+.s9:hover{
+    color: #36dff8;
+    transform: scale(1.2)translateY(-30px);
+}
+
+.s9:hover + p{
+    color: cyan;
+    text-decoration: solid #61dbfb underline;
+    transition: 2s;
+    transform: scale(1.1)
+}
+
+.contact{
+    text-align: center;
+    position: relative;
+    bottom: 6rem;
+    line-height: 2rem;
+}
+
+.contact input{
+    height: 2rem;
+    width: 20rem;
+    margin: 0.8rem;
+    padding-left: 10px;
+    border: 2px solid grey;
+    border-radius: 10px;
+    color: black;
+}
+
+.contact input:active{
+    box-shadow: 5px 5px 10px lightblue;
+}
+
+.contact input:focus{
+    background-color: rosybrown;
+    color: black;
+    font-size: 1rem;
+}
+
+.contact button{
+    height: 2rem;
+    width: 2rem;
+    border-radius: 10px;
+    border: 2px solid grey;
+}
+
+.contact button i{
+    font-size: 1rem;
+    color: black;
+}
+
+.contact input:focus + button{
+    background: linear-gradient(135deg,rgb(46, 145, 207) ,rgb(46, 42, 179));
+    /* border: 2px solid black; */
+}
+
+.contact button:active{
+    background-color: coral;
+}
