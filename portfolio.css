@@ -6,7 +6,7 @@
 }
 
 body{
-    background-color: #0d1b2a;
+    background: linear-gradient(90deg,rgb(56, 57, 68),black 70%);
     overflow: auto;
 }
 
@@ -27,8 +27,8 @@ header{
     width: 100%;
     top: 0px;
     left: 0px;
-    background-color: #011b2a;
-      z-index: 5;
+    background-color: rgb(24, 30, 54);
+      z-index: 100;
 }
 
 .nav{
@@ -40,6 +40,7 @@ header{
 
 .nav li a{
     transition: 0.7s;
+    text-decoration: none;
 }
 
 .nav li a:hover{
@@ -61,14 +62,72 @@ header{
     background-color: aqua;
   }
 
+  .side-menu{
+    display: flex;
+    flex-wrap: wrap;
+    width:  40px;
+    display: none;
+  }
+
+  .side-menu span{
+    color: white;
+    line-height: 6px;
+  }
+
+  .top-cross{
+    transform: rotate(45deg) translateX(4px);
+  }
+
+  .bottom-cross{
+    transform: rotate(-45deg) translateX(4px);
+  }
+
+  .head-dropbox{
+    height: 20rem;
+    width: 15rem;
+    position: absolute;
+    top: 80px;
+    background-color: rgba(179, 184, 230, 0.34);
+    right: 40px;
+    border-radius: 10px;
+    display: none;
+  }
+
+  .dropbox-nav li{
+    list-style: none;
+    margin: 5px;
+    padding: 14px;
+  }
+
+  .dropbox-nav li:hover{
+    background-color: #5376c6;
+    border-radius: 5px;
+  }
+
+  .dropbox-nav li:hover a{
+    color: #000;
+    font-weight: 600;
+  }
+
+  .dropbox-nav li a{
+    text-decoration: none;
+    transition: 0.3s;
+  }
+
+
 /* first page */
 .intro{
     height: 33rem;
     width: 90%;
-   background-color: #1b263b; 
+   background-color: linear-gradient(0deg,blue,black); 
     margin: 2rem auto;
     background-size: cover;
     padding: 2rem;
+}
+
+.intro-head{
+    display: flex;
+    justify-content: space-between;
 }
     
 .intro-line{
@@ -76,15 +135,32 @@ header{
     padding: 1.25rem;
     font-size: 2.25rem;
     text-align: center;
-    border-top: 4px solid #415A77;
-    border-bottom: 4px solid #415A77;
+    background: linear-gradient(blue,aqua,white);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+   /*  border-top: 4px solid #415A77;
+    border-bottom: 4px solid #415A77; */
+}
+
+ .intro-line::after{
+    content: "";
+    position: relative;
+    bottom: -20px;
+    height: 4px;
+    width: 100%;
+    background-color: white;
+    opacity: 0.8;
+    border-radius: 5px;
+    display: block;
 }
 
 .intro-main{
     position:absolute;
-    bottom: 10rem;
+    top: 18rem;
     left: 6rem;
-    font-size: 2.25rem;
+    font-size: 2.25em;
     letter-spacing: 3px;
     line-height: 4rem;
 }
@@ -95,27 +171,77 @@ span{
 
 .intro-img{
     position: absolute;
+    right: 100px;
     top: 15rem;
-    right: 10rem;
-    height: 20rem;
-    width: 20rem;
- /*    mix-blend-mode: difference;
-    filter: brightness(0.54) contrast(50); */
+    height: 15rem;
+    width: 23rem;
+    mix-blend-mode: hard-light
 }
+
+.intro-link{
+    color: black;
+    /* width: 120px; */
+    /* height: 40px; */
+    padding: 15px 30px;
+    position: relative;
+    top: 20rem;
+    margin: 30px;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    font-weight: 700;
+    transition: 1s;
+  }
+
+  .download-link .il-2{
+    display:none;
+    transition: all 1s;
+  }
+
+  .download-link:hover .il-2{
+    display: inline;
+  }
+
+  .download-link:hover .il-1{
+    display: none;
+  }
+
+  #github-link{
+    background-color: cadetblue;
+    color: white;
+  }
+
+  #github-link span i{
+    opacity: 0;
+    color: black;
+    transition:all 1s;
+  }
+
+  #github-link:hover{
+    background-color: white;
+    color: black;
+  }
+
+  #github-link:hover span i{
+    opacity: 1;
+  }
+
+  .intro-link:hover{
+    background-color: cadetblue;
+    color: white;
+  }
 
 /* about section */
 .about{
     height: 35rem;
     width: 90%;
-    background-color: #415A77;
-  /* background-image: url("https://4kwallpapers.com/images/wallpapers/infinity-stars-night-sky-dark-background-illuminated-480x800-2938.jpg"); */
+    background-color: linear-gradient(0deg,blue,black );
     margin: 2rem auto;
-   /*  background-size: cover; */
     padding: 2rem;
 }
 
 .about-main{
-    width: 65%;
+    width: 90%;
     padding: 2.5rem;
     font-size: 1rem;
     letter-spacing: 0.2rem;
@@ -123,28 +249,26 @@ span{
     color: gray;
 }
 
-.about-main span{
-    color: #000;
-    font-weight: bold;
-    font-size: 1.5rem;
-}
-
 .about-head{
     text-align: center;
     position: relative;
     padding: 1.25rem;
-    border-top: 4px solid #182437;
-    border-bottom: 4px solid #0D1B2A;
-    font-size: 2.2rem;
+    border-bottom: 4px solid white;
+    font-size: 2rem;
+    background: linear-gradient(blue,aqua,white);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 /* education */
 .education{
-    height: 55rem;
+    height: 60rem;
     width: 90%;
-    background-color: #164863;
+    background: none;
     margin: 2rem auto;
     padding: 2rem;
+/*     position: absolute; */
 }
 
 .head-main{
@@ -153,6 +277,10 @@ span{
     letter-spacing: 0.15rem;
     font-size: 1.5rem;
     margin-bottom: 1rem;
+    background: linear-gradient(aqua,lightskyblue);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .head-main::after{
@@ -161,50 +289,86 @@ span{
     bottom: -20px;
     height: 4px;
     width: 100%;
-    background-color: #000;
+    background-color: white;
     opacity: 0.5;
     display: block;
 }
 
-.head-main::before{
-    content: "";
+
+.section-bar{
+    height: 50rem;
+    width: 5px;
+    background-color: turquoise;
+    display: inline-block;
+    margin: 0 auto;
     position: relative;
-    top: -20px;
-    height: 4px;
-    width: 100%;
-    opacity: 0.5;
-    background-color: #000;
-    display: block;
+    left: 34rem;
+    border-radius: 10px;
+}
+
+.icon-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 50rem;
+}
+
+.section-icon{
+    height: 4rem;
+    width:   4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: turquoise;
+    position: relative;
+    bottom: 50rem;
+    left: 32rem;
+    transition: 0.5s;
+}
+
+.section-icon i{
+    font-size: 20px;
+}
+
+.section-icon:hover{
+    background-color: lightcyan;
+    box-shadow: 2px 2px 10px cyan,-2px -2px 10px cyan;
+}
+
+.section-icon:hover i{
+    color: black;
 }
 
 .section-block{
-    height: 150px;
-    width: 500px;
-    border: 2px solid black;
+    /* height: 10rem; */
+    width: 25rem;
+    border: 2px double white;
     border-radius: 10px;
-    background-color: #164863;
+    background-color: black;
     padding: 10px;
-    margin: 25px;
+    margin: 20px;
+    position: relative;
+    bottom: 100rem;
     line-height: 2rem;
     letter-spacing: 0.15em;
     font-size: 0.8rem;
-}
-
-.section-block {
     text-align: center;
 }
 
 .section-block:hover{
-    box-shadow: 5px 5px 16px lightskyblue, -5px -5px 16px lightgoldenrodyellow;
+    box-shadow: 4px 4px 10px lightskyblue, -4px -4px 10px lightgoldenrodyellow;
+    border: none;
 }
 
 .sec-position{
     position: relative;
-   left: 35rem;
+   right: -39rem;
 }
 
+/* project section */
 .project{
-    background-color: #18253e;
+    background: none;
     height: 25rem;
     width: 90%;
     margin: 2rem auto;
@@ -221,17 +385,46 @@ span{
 }
 
 .p-content{
-    height: 15rem;
-    width: 10rem;
+    height: 20rem;
+    width: 14rem;
     display: inline-block;
-    border: 3px solid whitesmoke;
-    margin: 2rem;
-    padding: 2px;
+    border: 1.5px solid whitesmoke;
+    border-radius: 15px;
+    margin: 1.5rem;
     text-align: center;
+    background-color: #2D3250;
+}
+
+.p-content img{
+    height: 60%;
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+}
+
+.p-content a{
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    line-height: 1.5rem;
+    transition: 1s;
+}
+
+.p-content a:hover{
+    color: lightblue;
+    text-decoration: 1px underline lightblue;
+    letter-spacing: 2px;
+}
+
+.p-content p{
+    font-size: 0.8rem;
+    margin-top: 10px;
+    line-height: 1.5rem;
+    color: wheat
 }
 
 .skills{
-    background-color: #000;
+    background: none;
     height: 50rem;
     width: 90%;
     margin: 2rem auto;
@@ -418,4 +611,72 @@ span{
 
 .contact button:active{
     background-color: coral;
+}
+
+
+/* responsive */
+@media(max-width: 1080px){
+    .intro-img{
+        display: none;
+    }
+
+    .sec-position{
+        left: 1px;
+    }
+
+    .section-block{
+        margin: 12px auto;
+    }
+    .project{
+        height: 50rem;
+    }
+    .side-menu{
+        display: flex;
+    }
+    .nav{
+        display: none;
+    }
+    .section-bar{
+        display: none;
+    }
+    .section-block{
+       top: 5rem
+    }
+    .icon-box{
+        display: none;
+    }
+}
+
+@media(min-width: 1450px){
+    .intro-img{
+        display: none;
+    }
+}
+
+@media(max-width: 870px){
+    .nav #intro{
+        display: none;
+    }
+}
+
+@media(max-width: 420px){
+    .intro-link{
+        top: 24rem;
+    }
+
+    .optional-p{
+        display: none;
+    }
+}
+
+@media(max-width: 620px){
+    .about{
+        height: 48rem;
+    }
+    .content{
+        display: none;
+    }
+    .education{
+        height: 30rem;
+    }
 }

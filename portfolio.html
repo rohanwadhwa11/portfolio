@@ -11,6 +11,8 @@
     integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" 
     crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" 
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 </head>
 <body>
     <header>
@@ -24,79 +26,172 @@
             <li><a href="#contact">Contact</a></li>
             <!-- <li><a>Magic</a></li> -->
         </ul>
+        <div class="side-menu">
+            <span class="material-symbols-outlined topLine" >
+                horizontal_rule
+            </span>
+            <span class="material-symbols-outlined middleLine" >
+                 horizontal_rule
+            </span>
+            <span class="material-symbols-outlined lastLine" >
+                horizontal_rule
+            </span>
+        </div>
+        <div class="head-dropbox">
+            <ul class="dropbox-nav">
+                <li><a href="#intro">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#project">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <!-- <li><a>Magic</a></li> -->
+            </ul>
+        </div>
     </header>
 
     <hr id="intro">
     <div class="intro" >
         <p class="intro-line">Welcome to my portfolio</p>
-        <p class="intro-main">Hey ! I am Rohan wadhwa<br><span>web devloper.</span></p>
-        <img src="https://img.freepik.com/premium-vector/infinity-logo-creative-concept-with-glowing-neon-light-style-bold-double-infinity-sign-elements-dark-brick-wall-background-vector-flat-graphic-design_549897-2684.jpg?w=2000" alt="infinate" class="intro-img">
+        <div class="intro-head">
+        <div class="intro-text">
+              <p class="intro-main">Hey ! I am Rohan wadhwa<br><span>web devloper.</span></p>
+              <a href="FirstName_LastName_Resume.pdf" download class="download-link">
+                <button class="intro-link il-1">CV</button>
+                <button class="intro-link il-2"><i class="fa-solid fa-download"></i></button>
+            </a>
+        <a href="https://github.com/rohanwadhwa11">
+            <button class="intro-link" id="github-link">
+                GitHub
+                <span>
+                    <i class="fa-brands fa-github"></i>
+                </span>
+            </button>
+        </a>
+    </div>
+        
+        <img src="infinity gif.gif" alt="infinate" class="intro-img">
+        </div>
     </div>
 
-    <hr id="about">
+    <div id="about"></div>
 
     <section class="about" >
-        <h2 class="about-head">About me</h2>
+        <P class="about-head">About me</P>
         <div class="about-main">
            
-        <p class="about-line"><span>=&gt;</span> I am Rohan Wadhwa. I belong to Bikaner, Rajasthan.<br>
-            <span>=&gt;</span>I am pursing my btech degree in Computer Science from &nbsp;&nbsp;&nbsp;&nbsp;Engineering College Bikaner.<br>
-           <span> =&gt;&nbsp;I am MERN stack web devloper.</span><br>
-           <span>=&gt; </span> I have good knowledge of HTML ,CSS ,JavaScript ,Bootstrap by &nbsp; &nbsp;&nbsp;learning and build projects on it and currently 
-           i am continuing &nbsp; &nbsp;&nbsp;my learning with backend and database.<br>
-            <span>=&gt;</span>To get more knowledge i explore and interact new things on&nbsp; &nbsp;&nbsp;&nbsp;  internet.<br> 
-            <span>=&gt;</span> I always keep in my mind to be a better version of myself.
+        <p> Hello! I'm Rohan Wadhwa, 
+            a dedicated computer science student with keen interset web development Technologies.
+            I'm on a journey to master the MERN stackand transform into a better version of myself as a developer
+            From front-end design with React to back-end development with Node.js .I'm constantly honing my skills to build immersive web experiences.
+         <br><br>
+           <p class="optional-p">I am eager to bring my knowledge and enthusiasm to collaborative environments.
+            If you're looking for a dedicated web developer who is passionate about learning and 
+           delivering high-quality work,<br><br>
         </p>
+        <p>let's connect and explore potential opportunities.</p>
         </div>
     </section> 
-    <hr id="education">
+    <div id="education"></div>
     <section class="education">
         <h2 class="head-main">Educational Details </h2>
+        <div class="section-bar">
+        </div>
+       <div class="icon-box">
+        <div class="section-icon"><i class="fa-solid fa-chalkboard-user"></i></div>
+        <div class="section-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+        <div class="section-icon"><i class="fa-brands fa-google-scholar"></i></div>
+        <div class="section-icon"><i class="fa-solid fa-school"></i></div>
+       </div>
         <div class="section-block">
-            <h3>Full Stack web Devlopment</h3>
-            <h5>(June 2023 - Nov 2023)</h5>
-            <p>HTML ,CSS ,JavaScript ,Bootstrap ,Tailwind ,
+            <h3>Full Stack web development
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <i class="fa-solid fa-caret-down fa-caret-up"></i></h3>
+            <div class="content">
+                <h5>(June 2023 - Nov 2023)</h5>
+                <p>HTML ,CSS ,JavaScript ,Bootstrap ,Tailwind ,
                 NodeJs ,ExpressJs ,ReactJs ,Git ,Github ,
                 MongoDB ,MySQL .
             </p>
+            </div>
         </div>
         <div class="section-block sec-position">
-            <h3>BTech 3rd Year</h3>
+            <h3>BTech 3rd Year
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <i class="fa-solid fa-caret-down fa-caret-up"></i>
+            </h3>
+           <div class="content">
             <h5>(Nov 2021 - May 2025)</h5>
             <p>Engineering College Bikaner(ECB)</p>
             <p>CGPA: !!!</p>
             <p>Bikaner,Rajasthan</p>
+           </div>
         </div>
         <div class="section-block">
-            <h3>Senior Secondary(PCM)</h3>
-            <h5>(2020-2021)</h5>
+            <h3>Senior Secondary(PCM)
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <i class="fa-solid fa-caret-down fa-caret-up"></i>
+            </h3>
+            <div class="content">
+                <h5>(2020-2021)</h5>
             <p>Saint N.N. Senior Secondary School</p>
             <p>Percentage: 95.80%(RBSE)</p>
             <p>Bikaner,Rajasthan</p>
+            </div>
         </div>
         <div class="section-block sec-position">
-            <h3>Secondary</h3>
-            <h5>(2018-2019)</h5>
+            <h3>Secondary
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <i class="fa-solid fa-caret-down fa-caret-up"></i>
+            </h3>
+            <div class="content">
+                <h5>(2018-2019)</h5>
             <p>Saint N.N. Secondary School</p>
             <p>Percentage: 88%(RBSE)</p>
             <p>Bikaner,Rajasthan</p>
+            </div>
         </div>
     </section>
-        <hr id="project">
+        <div id="project"></div>
         <section class="project">
             <h2 class="head-main" id = "project-head">Projects</h2>
             <div class="p-box">
+              <div class="p1">
                 <div class="p-content">
-                    <a>Spotify Website clone</a>
-                    <p>Spotify describe</p>
+                    <img src="https://storage.googleapis.com/pr-newsroom-wp/1/2024/01/Spotify_FTR_Header.png" alt="spotify">
+                    <a href="D:\creative work\spotify clone\spotify clone.html">Spotify Website clone</a>
+                    <p>Making clone using box pattern with hover effects and some JavaScript functionalities</p>
                 </div>
                 <div class="p-content">
-                    <img src="" alt="amazon">
-                    <a>Amazon website clone</a>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3OSiRQGvOtWIefKU26KcjE-2HmB_mUC3wju83JCnxx3OxjLoyOdjTvbN-JYEiv9kU-qQ&usqp=CAU" alt="amazon">
+                    <a href="D:\creative work\amazon clone\amazon clone.html">Amazon website clone</a>
                     <p>Amazon describe</p>
                 </div>
-                <div class="p-content"></div>
-                <div class="p-content"></div>
+              </div>
+                <div class="p1">
+                    <div class="p-content">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxmtcH6-8N1VaFNFIlZSEMF5sd0lFuhuYzuTQVW4vi4g&s" alt="weather">
+                        <a href="D:\creative work\weather app\weather.html">Weather App</a>
+                        <p>Weather describe</p>
+                    </div>
+                    <div class="p-content">
+                        <img src="https://media.istockphoto.com/id/1367281156/vector/vector-illustration-of-3d-realistic-calculator-icon-isolated.jpg?s=612x612&w=0&k=20&c=dYUUuOMy_-6T_uxz9-R-jY5-rUVafY4YzpKrqjVCpYY=" alt="calculator">
+                        <a href="D:\creative work\calculator\calculator.html">Calculator</a>
+                        <p>Calculator details</p>
+                    </div>
+                </div>
             </div>
         </section>
         <hr id="skills">
@@ -117,16 +212,16 @@
         <footer id="contact">
             <section class="contact">
                   <form>
-                    <a href="mailto:rohanwadhwa913@gmail.com"><input type="text" placeholder="Enter your query"></a>
+                    <input type="text" placeholder="Enter your query">
                     <button ><i class="fa-solid fa-arrow-up"></i></button>
                   </form>
-                    <p>Mobile no : 7877957238</p>
-                    <p>Email id : <a href="rohanwadhwa913@gmail.com">rohanwadhwa913@gmail.com</a></p>
+                    <p>Mobile no : <a href="tel:7877957238">7877957238</a></p>
+                    <p>Email id : <a href="mailto:rohanwadhwa913@gmail.com">rohanwadhwa913@gmail.com</a></p>
                     <p><b><u>thank u for visiting my portfolio &hearts;</u></b></p>
             </section> 
              
         </footer>
     </section>
-
+    <script src="portfolio.js"></script>
 </body>
 </html>
