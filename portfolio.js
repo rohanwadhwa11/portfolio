@@ -47,13 +47,9 @@ for(col of colapse){
 let content = this.nextElementSibling;
 if(content.style.display == "block"){
     content.style.display = "none";
-    this.style.backgroundColor = "black";
-    this.style.color = "white";
 }
 else{
     content.style.display = "block";
-    this.style.backgroundColor = "grey";
-    this.style.color = "black";
 }
     
 let downIcon = this.children;

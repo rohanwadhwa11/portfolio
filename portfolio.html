@@ -13,6 +13,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap" rel="stylesheet">
     <link rel="stylesheet" 
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,400&display=swap"
+ rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Mako&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -51,14 +56,16 @@
     </header>
 
     <hr id="intro">
-    <div class="intro" >
-        <p class="intro-line">Welcome to my portfolio</p>
-        <div class="intro-head">
+    <div class="intro">
         <div class="intro-text">
-              <p class="intro-main">Hey ! I am Rohan wadhwa<br><span>web devloper.</span></p>
+              <p class="intro-main"><span>Hey!</span><br> I am <div class="intro-name">Rohan Wadhwa</div><br>
+                <div class="intro-type">a web devloper and designer</div></p>
               <a href="FirstName_LastName_Resume.pdf" download class="download-link">
-                <button class="intro-link il-1">CV</button>
-                <button class="intro-link il-2"><i class="fa-solid fa-download"></i></button>
+                <button class="intro-link il-1">CV
+                    <span>
+                        <i class="fa-solid fa-download"></i>
+                    </span>
+                </button>
             </a>
         <a href="https://github.com/rohanwadhwa11">
             <button class="intro-link" id="github-link">
@@ -68,22 +75,26 @@
                 </span>
             </button>
         </a>
-    </div>
-        
-        <img src="infinity gif.gif" alt="infinate" class="intro-img">
+        <div class="social-icon">
+            <a href="https://github.com/rohanwadhwa11"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/rohan-wadhwa-0446a4226/"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://www.instagram.com/aryan_khatri11/?next=%2F"><i class="fa-brands fa-instagram"></i></a>
         </div>
+    </div>
+          <div class="try"></div>
     </div>
 
     <div id="about"></div>
-
+<!-- "C:\Users\hp\Downloads\black self.jpg" -->
     <section class="about" >
         <P class="about-head">About me</P>
+        <div class="try2"></div>
         <div class="about-main">
-           
+            <img src="C:\Users\hp\Downloads\full black.jpg" alt="infinate" class="intro-img">
         <p> Hello! I'm Rohan Wadhwa, 
             a dedicated computer science student with keen interset web development Technologies.
             I'm on a journey to master the MERN stackand transform into a better version of myself as a developer
-            From front-end design with React to back-end development with Node.js .I'm constantly honing my skills to build immersive web experiences.
+            From front-end design with React to back-end development with Node.js .
          <br><br>
            <p class="optional-p">I am eager to bring my knowledge and enthusiasm to collaborative environments.
             If you're looking for a dedicated web developer who is passionate about learning and 
@@ -94,7 +105,7 @@
     </section> 
     <div id="education"></div>
     <section class="education">
-        <h2 class="head-main">Educational Details </h2>
+        <h2 class="about-head">Educational Details </h2>
         <div class="section-bar">
         </div>
        <div class="icon-box">
@@ -166,39 +177,41 @@
     </section>
         <div id="project"></div>
         <section class="project">
-            <h2 class="head-main" id = "project-head">Projects</h2>
+            <h2 class="about-head">Projects</h2>
             <div class="p-box">
-              <div class="p1">
+              <div class="p-block">
                 <div class="p-content">
-                    <img src="https://storage.googleapis.com/pr-newsroom-wp/1/2024/01/Spotify_FTR_Header.png" alt="spotify">
-                    <a href="D:\creative work\spotify clone\spotify clone.html">Spotify Website clone</a>
-                    <p>Making clone using box pattern with hover effects and some JavaScript functionalities</p>
+                    <p class="p-title"><a href="D:\creative work\spotify clone\spotify clone.html">Spotify clone</a></p>
+                    <p class="p-describe">The goal of this project is to recreate the front-end user interface of Spotify using only HTML and CSS.
+                         <div class="op-info">This static website will simulate the look and feel of the Spotify platform,
+                            focusing on layout, styling, and responsive design</div></p>
                 </div>
                 <div class="p-content">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3OSiRQGvOtWIefKU26KcjE-2HmB_mUC3wju83JCnxx3OxjLoyOdjTvbN-JYEiv9kU-qQ&usqp=CAU" alt="amazon">
-                    <a href="D:\creative work\amazon clone\amazon clone.html">Amazon website clone</a>
-                    <p>Amazon describe</p>
+                    <p class="p-title"><a href="https://rohanwadhwa11.github.io/Todo-list/todo%20app.html">Todo list</a></p>
+                    <pn class="p-describe">The aim of this project is to create a simple yet functional to-do list app using HTML, CSS, and JavaScript.
+                         <div class="op-info">The app will allow users to add, delete, and manage tasks.
+                            It keep track of their daily tasks and improve productivity.</div></p>
                 </div>
               </div>
-                <div class="p1">
+                <div class="p-block">
                     <div class="p-content">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxmtcH6-8N1VaFNFIlZSEMF5sd0lFuhuYzuTQVW4vi4g&s" alt="weather">
-                        <a href="D:\creative work\weather app\weather.html">Weather App</a>
-                        <p>Weather describe</p>
+                        <p class="p-title"><a href="https://rohanwadhwa11.github.io/weather-app/weather.html">Weather App</a></p>
+                        <p class="p-describe">The purpose of this project is to create a dynamic weather app using HTML, CSS, and JavaScript 
+                            that provides users with real-time weather information based on their current location. 
+                            <div class="op-info">The app will fetch weather data from a weather API and display current conditions</div></p>
                     </div>
                     <div class="p-content">
-                        <img src="https://media.istockphoto.com/id/1367281156/vector/vector-illustration-of-3d-realistic-calculator-icon-isolated.jpg?s=612x612&w=0&k=20&c=dYUUuOMy_-6T_uxz9-R-jY5-rUVafY4YzpKrqjVCpYY=" alt="calculator">
-                        <a href="D:\creative work\calculator\calculator.html">Calculator</a>
-                        <p>Calculator details</p>
+                        <p class="p-title"><a href="https://rohanwadhwa11.github.io/calculator/calculator.html">Calculator</a></p>
+                        <p class="p-describe">The goal of this project is to develop a fully functional calculator that can
+                             perform basic arithmetic operations using HTML, CSS, and JavaScript.</p>
                     </div>
                 </div>
             </div>
         </section>
-        <hr id="skills">
-    <section class="skills">
-        <h2 class="head-main" id = "skills-head">Skills</h2>
+    <section class="skills" id="skills">
+        <h2 class="about-head">Skills</h2>
         <ul class="skill-coarse">
-            <li><i class="fa-brands fa-html5 skill-icon s1"></i><p>HTML</p></li>
+            <li><i class="fa-brands fa-html5 skill-icon s1"></i><p class="i1">HTML</p></li>
             <li><i class="fa-brands fa-css3-alt skill-icon s2"></i><p>CSS</p></li>
             <li><i class="fa-brands fa-bootstrap skill-icon s3"></i><p>BOOTSTRAP</p></li>
             <li><i class="fa-brands fa-square-js skill-icon s4"></i><p>JS</p></li>
@@ -208,20 +221,53 @@
             <li><i class="fa-brands fa-js skill-icon s8"></i><p>E.js</p></li>
             <li><i class="fa-brands fa-react skill-icon s9"></i><p>REACT</p></li>
         </ul>
-       
+       </section>
         <footer id="contact">
             <section class="contact">
-                  <form>
-                    <input type="text" placeholder="Enter your query">
-                    <button ><i class="fa-solid fa-arrow-up"></i></button>
-                  </form>
-                    <p>Mobile no : <a href="tel:7877957238">7877957238</a></p>
-                    <p>Email id : <a href="mailto:rohanwadhwa913@gmail.com">rohanwadhwa913@gmail.com</a></p>
+                <h2 class="about-head">Contact</h2>
+                <div class="contact-details">
+                    <div class="contact-info">
+                        <div class="contact-call">
+                            <i class="fa-solid fa-phone"></i>
+                            <div class="info">
+                                <p>Call Us</p>
+                            <a href="">+91 7877957238</a>
+                            </div>
+                        </div>
+                        <div class="contact-call" id="contact-mail">
+                            <i class="fa-solid fa-envelope"></i>
+                            <div class="info">
+                                <p>Email Us</p>
+                                <a href="">rohanwadhwa913@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-call" id="contact-address">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <div class="info">
+                                <p>Address</p>
+                            <a>Bikaner,Rajasthan,India</a>
+                            </div>
+                        </div>
+                    </div>
+                      <form>
+                        <input type="text" placeholder="Name" class="form-name">
+                        <input type="text" placeholder="Email" class="form-name">
+                        <textarea cols="20" rows="10" placeholder="Enter Your Query" class="form-query"></textarea>
+                        <button class="form-btn">Send Message</button>
+                      </form>
+                </div>
+                    <div class="ending">
+                        <p>&copy; Rohan 2024.All Rights Reserved</p>
                     <p><b><u>thank u for visiting my portfolio &hearts;</u></b></p>
+                    <!-- <div class="end-icon">
+                        <a href="https://github.com/rohanwadhwa11"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/rohan-wadhwa-0446a4226/"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://www.instagram.com/aryan_khatri11/?next=%2F"><i class="fa-brands fa-instagram"></i></a>
+                    </div> -->
+                    </div>
             </section> 
              
         </footer>
-    </section>
     <script src="portfolio.js"></script>
 </body>
 </html>
