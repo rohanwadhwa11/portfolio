@@ -3,7 +3,6 @@ import { CiLinkedin } from "react-icons/ci";
 import { CiMail } from "react-icons/ci";
 import { FaGithub } from "react-icons/fa";
 import Logo from "/src/assets/logo.png"
-import NavItem from "./navitem";
 
 export default function Navbar() {
   return (
@@ -16,9 +15,7 @@ export default function Navbar() {
           className=" w-44 "
         />
       </div>
-      {/* <div className="flex-1 flex justify-center">
-  <NavItem />
-</div> */}
+      
 
       <div className="m-8 flex items-center justify-center gap-8 text-3xl text-white">
        <a href="www.linkedin.com/in/rohan-wadhwa-0446a4226"><CiLinkedin /></a> 
