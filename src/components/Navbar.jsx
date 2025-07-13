@@ -18,7 +18,7 @@ export default function Navbar() {
       
 
       <div className="m-8 flex items-center justify-center gap-8 text-3xl text-white">
-       <a href="www.linkedin.com/in/rohan-wadhwa-0446a4226"><CiLinkedin /></a> 
+       <a href="https://www.linkedin.com/in/rohan-wadhwa-0446a4226/"><CiLinkedin /></a> 
         <a href="https://github.com/rohanwadhwa11"><FaGithub /></a>
         <a href="mailto:rohanwadhwa913@gmail.com"><CiMail /></a>
       </div>
